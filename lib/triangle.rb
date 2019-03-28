@@ -10,7 +10,7 @@ class Triangle
     if is_valid?
       if @sides.uniq.length==1 
         :equilateral
-      elsif @sides.uniq==2
+      elsif @sides.uniq.length==2
         :isosceles
       else 
         :scalene
