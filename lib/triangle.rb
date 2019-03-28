@@ -7,14 +7,16 @@ class Triangle
   end
   
   def kind 
-    if is_valid
+    if is_valid?
+      if @sides.uniq
     end
   end
   
   def is_valid?
     if @sides[0]+@sides[1]<=@sides[2]|| if sides.include?(0)
       raise TriangleError
-      
+    else
+      true 
   end
   
   class TriangleError < StandardError
