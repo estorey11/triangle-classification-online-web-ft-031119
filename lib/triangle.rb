@@ -8,7 +8,13 @@ class Triangle
   
   def kind 
     if is_valid?
-      if @sides.uniq
+      if @sides.uniq.length==1 
+        :equilateral
+      elsif @sides.uniq==2
+        :isosceles
+      else 
+        :scalene
+      end
     end
   end
   
