@@ -19,7 +19,7 @@ class Triangle
   end
   
   def is_valid?
-    if @sides[0]+@sides[1]<=@sides[2]|| if sides.include?(0)
+    if @sides[0]+@sides[1]<=@sides[2]|| sides.include?(0)
       raise TriangleError
     else
       true 
